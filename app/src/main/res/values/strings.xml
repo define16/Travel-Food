@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">TravelAndFood</string>
+    <string name="title_activity_food__0">Food_Activity_0</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_travel__0">Travel_Activity_0</string>
+    <string name="title_activity_travel__map__0">Map</string>
+    <string name="title_activity_food__map__0">Map</string>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="light_skyblue">#edfcff</color>
+    <string name="title_activity_travel__map_1">Map</string>
+    <string name="title_activity_travel__maps">Map</string>
+    <string name="title_activity_food__map">Map</string>
+</resources>

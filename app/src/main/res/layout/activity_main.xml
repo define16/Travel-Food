@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.tabtreval.Main_Activity"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="510dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="220dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:weightSum="1">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:weightSum="1">
+
+                                <ImageView
+                                    android:id="@+id/imageView9"
+                                    android:layout_width="384dp"
+                                    android:layout_height="220dp"
+                                    app:srcCompat="@drawable/main_3" />
+
+                                <ImageView
+                                    android:id="@+id/imageView8"
+                                    android:layout_width="387dp"
+                                    android:layout_height="220dp"
+                                    app:srcCompat="@drawable/main_2" />
+
+                                <ImageView
+                                    android:id="@+id/imageView10"
+                                    android:layout_width="385dp"
+                                    android:layout_height="220dp"
+                                    app:srcCompat="@drawable/main_1" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="신규목록" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/imageView_main4"
+                            android:layout_width="170dp"
+                            android:layout_height="100dp"
+                            android:layout_margin="10dp"
+                            app:srcCompat="@drawable/pic_food_1" />
+
+                        <ImageView
+                            android:id="@+id/imageView_main5"
+                            android:layout_width="170dp"
+                            android:layout_height="100dp"
+                            android:layout_margin="10dp"
+
+                            app:srcCompat="@drawable/pic_travel_6" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/imageView_main7"
+                            android:layout_width="170dp"
+                            android:layout_height="100dp"
+                            android:layout_margin="10dp"
+
+                            app:srcCompat="@drawable/pic_travel_2" />
+
+                        <ImageView
+                            android:id="@+id/imageView17"
+                            android:layout_width="170dp"
+                            android:layout_height="100dp"
+                            android:layout_margin="10dp"
+                            app:srcCompat="@drawable/pic_food_4" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/imageView18"
+                            android:layout_width="170dp"
+                            android:layout_height="100dp"
+                            android:layout_margin="10dp"
+
+                            app:srcCompat="@drawable/pic_food_3" />
+
+                        <ImageView
+                            android:id="@+id/imageView19"
+                            android:layout_width="170dp"
+                            android:layout_height="100dp"
+                            android:layout_margin="10dp"
+                            app:srcCompat="@drawable/pic_travel_1" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/imageView20"
+                            android:layout_width="170dp"
+                            android:layout_height="100dp"
+                            android:layout_margin="10dp"
+                            app:srcCompat="@drawable/pic_food_2" />
+
+                        <ImageView
+                            android:id="@+id/imageView21"
+                            android:layout_width="170dp"
+                            android:layout_height="100dp"
+                            android:layout_margin="10dp"
+
+                            app:srcCompat="@drawable/pic_travel_6" />
+                    </TableRow>
+                </TableLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/Main_Layout_Menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/Food_Menu_Home"
+            android:layout_alignTop="@+id/Food_Best_Item_1"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/Food_Menu_Home"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_weight="1"
+                android:onClick="mainClickHome"
+                android:text="홈" />
+
+            <Button
+                android:id="@+id/Food_Menu_Travel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_toLeftOf="@+id/Food_Menu_Food"
+                android:layout_toStartOf="@+id/Food_Menu_Food"
+                android:layout_weight="1"
+                android:onClick="mainClickTravel"
+                android:text="여행" />
+
+            <Button
+                android:id="@+id/Food_Menu_Food"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:onClick="mainClickFood"
+                android:text="맛집"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="w,1:1"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <Button
+                android:id="@+id/Food_Menu_Blog"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_toEndOf="@+id/Food_Menu_Food"
+                android:layout_toRightOf="@+id/Food_Menu_Food"
+                android:layout_weight="1"
+                android:onClick="mainClickBlog"
+                android:text="블로그" />
+
+            <Button
+                android:id="@+id/Food_Menu_Suggest"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_weight="1"
+                android:onClick="mainClickSuggest"
+                android:text="추천" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
